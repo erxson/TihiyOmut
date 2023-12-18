@@ -1,0 +1,14 @@
+#================ Permissions ================#
+# tihiyomut.use - Право на использование      #
+# tihiyomut.admin - Право на обход всякого    #
+# tihiyomut.sex.toggle - Право на /sex toggle #
+# tihiyomut.sex.reload - Право на /sex reload #
+#=============================================#
+
+enabled: true
+admin_bypass: true
+sex_duration: 10 # в секундах
+
+chat_broadcast:
+  enabled: false
+  message: "%passive% жоска отчирипокал %active%"

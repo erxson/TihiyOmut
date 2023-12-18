@@ -1,0 +1,20 @@
+name: TihiyOmut
+author: erxson
+version: '${project.version}'
+main: xd.ericsson.tihiyomut.TihiyOmut
+api-version: '1.20'
+depend: [ emotecraft ]
+folia-supported: true
+
+commands:
+  sex:
+    description: MINECRAFT 2024 SEX UPDATE
+    usage: /<command>
+    permission: tihiyomut.sex
+    subcommands:
+      reload:
+        description: Перезагружает конфиг
+        permission: tihiyomut.sex.reload
+      toggle:
+        description: Включает/выключает плагин
+        permission: tihiyomut.sex.toggle
