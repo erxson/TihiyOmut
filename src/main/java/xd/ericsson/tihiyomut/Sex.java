@@ -21,7 +21,7 @@ import static xd.ericsson.tihiyomut.TihiyOmut.*;
 public class Sex {
     public static Map<Player, Entity> playersInSexState = new HashMap<>();
 
-    static void fuck(Player activePlayer, Entity passiveEntity) {
+    public static void fuck(Player activePlayer, Entity passiveEntity) {
         if (
                 passiveEntity.getType() == EntityType.PLAYER &&
                 activePlayer.getInventory().getItemInMainHand().getType().isAir() &&
@@ -47,7 +47,7 @@ public class Sex {
         }
     }
 
-    static void placeInFrontOf(Player activePlayer, Entity passiveEntity, double distance) {
+    public static void placeInFrontOf(Player activePlayer, Entity passiveEntity, double distance) {
         Vector direction = passiveEntity.getLocation().subtract(activePlayer.getLocation()).toVector().normalize();
         Vector newPosition = activePlayer.getLocation().add(direction.multiply(distance)).toVector();
         passiveEntity.teleport(newPosition.toLocation(passiveEntity.getWorld()));
@@ -59,7 +59,7 @@ public class Sex {
         passiveEntity.teleport(passiveEntity.getLocation().setDirection(direction));
     }
 
-    static void startSex(Player activePlayer, Entity passiveEntity) {
+    public static void startSex(Player activePlayer, Entity passiveEntity) {
         Location initialLocation = activePlayer.getLocation().clone();
         for (int x = 0; x < 15; x++) {
             double maxOffset = 0.3;
@@ -77,7 +77,7 @@ public class Sex {
         forcePlayEmote(Emotes.getUUID(passiveEntity, false), passiveEmote.get(0));
     }
 
-    static void stopSex(Player activePlayer, Entity passiveEntity) {
+    public static void stopSex(Player activePlayer, Entity passiveEntity) {
         Location initialLocation = activePlayer.getLocation().clone();
         Vector particleDirection = passiveEntity.getLocation().subtract(initialLocation).toVector().normalize();
 

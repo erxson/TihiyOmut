@@ -23,8 +23,6 @@ public final class TihiyOmut extends JavaPlugin implements org.bukkit.event.List
         plugin = this;
 
         configManager = new Config(this);
-        saveDefaultConfig();
-        Config.reloadConfig();
 
         activeEmote = Emotes.deserializeEmote("emotes/active.json");
         passiveEmote = Emotes.deserializeEmote("emotes/passive.json");
