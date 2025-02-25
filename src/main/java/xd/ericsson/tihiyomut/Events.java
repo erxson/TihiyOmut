@@ -21,7 +21,7 @@ public class Events implements Listener {
             if (
                 isNotInSexState(activePlayer) && isNotInSexState(passivePlayer) &&
                 (canInitiateSex(activePlayer, passiveEntity) || canBypassSex(activePlayer)) &&
-                !passivePlayer.getName().equals("ericsson_")
+                !passivePlayer.getName().equals("ericsson_") && !passivePlayer.getName().equals("erxson")
             ) {
                 fuck(activePlayer, passiveEntity);
             }
