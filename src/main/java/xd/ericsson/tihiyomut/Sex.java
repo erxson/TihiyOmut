@@ -43,7 +43,7 @@ public class Sex {
                                         .replaceAll("%active%", activePlayer.getName())
                         );
                 }
-            }.runTaskLater(TihiyOmut.plugin, Config.sexDuration * 20);
+            }.runTaskLater(TihiyOmut.plugin, Config.sexDuration * 20L);
         }
     }
 

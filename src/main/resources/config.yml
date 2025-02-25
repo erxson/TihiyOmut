@@ -1,14 +1,14 @@
-#================ Permissions ================#
-# tihiyomut.use - Право на использование      #
-# tihiyomut.admin - Право на обход всякого    #
-# tihiyomut.sex.toggle - Право на /sex toggle #
-# tihiyomut.sex.reload - Право на /sex reload #
-#=============================================#
+#=================== Permissions ===================#
+# tihiyomut.use        - Permission to sex (nice)   #
+# tihiyomut.admin      - Permission to bypass sex   #
+# tihiyomut.sex.toggle - Permission for /sex toggle #
+# tihiyomut.sex.reload - Permission for /sex reload #
+#===================================================#
 
-enabled: true
-admin_bypass: true
-sex_duration: 10 # в секундах
+enabled: true  # Enables or disables the plugin (idk why you would disable it)
+admin_bypass: true  # Admin always dominates!
+sex_duration: 10  # Duration in seconds
 
 chat_broadcast:
-  enabled: false
-  message: "%passive% жоска отчирипокал %active%"
+  enabled: false  # Enable or disable chat announcements
+  message: "%passive% is happier than before, thanks to %active%."
